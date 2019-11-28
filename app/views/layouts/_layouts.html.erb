@@ -6,10 +6,13 @@
     		<tbody>
     			<tr></tr>
     			<tr>
+    				<td>
     				<h4 class="profile-name">name</h4>
     			    <%= user.name %>
+    				</td>
 				</tr>
 				<tr>
+					<td>
 					<h4 class="profile-introduction">introduction<%= user.introduction %></h4>
  						
 							<% if user.id == current_user.id %>
@@ -21,6 +24,7 @@
 						<button type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
 							</button><% end %>	
 					<% end %>
+				</td>
         		</tr>
     			
 			</tbody>
