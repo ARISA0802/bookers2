@@ -12,13 +12,13 @@
 				<th></th>
 				<th>Title</th>
 				<th>Opinion</th>
-				</tr>
+				</tr> 
 			</thead>
 			<tbody>
 				<% @users.each do |user| %>
 				<tr>
 					<td>
-						<%= attachment_image_tag @book.user, :profile_image, :fill, 60, 60, class: "img-circle pull-left profile-thumb", fallback: "no_image.jpg"%>
+						<%= attachment_image_tag user, :profile_image, :fill, 60, 60, class: "img-circle pull-left profile-thumb", fallback: "no_image.jpg"%>
 					</td>
 					<td>
 						<%= user.name %>
